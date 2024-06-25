@@ -1,0 +1,98 @@
+nav {
+    margin: 0px 0px 150px 0px;
+    font-size: medium;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+div.Contact {
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tata {
+    color: #000000;
+    text-decoration: none;
+    text-align: left;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 25px 16px;
+}
+
+nav a.split:hover {
+    color: rgb(56, 102, 241);
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+}
+
+nav a.split {
+    float: right;
+}
+
+.image1 {
+    float: left;
+    margin-right: 50px;
+}
+
+P.a {
+    font-size: 90px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(241, 65, 180);
+    margin: 0;
+
+}
+
+P.b {
+    font-size: 45px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 170px;
+}
+
+div.Home {
+    width: 70%;
+    margin: 0 auto;
+}
+
+hr.Divider {
+    border-top: 1px solid #c5c5c5;
+    margin: 100px 25px 100px 25px;
+}
+
+div.work {
+    width: 50%;
+    margin: 0 auto;
+}
+
+P.c {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: inline-start;
+    margin-right: 100px
+}
+
+P.d {
+    font-size: 3ch;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2.lana {
+    background-color: rgb(238, 193, 224);
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
