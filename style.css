@@ -2,11 +2,11 @@
 nav {
     font-size: medium;
     font-weight: 500;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
     background-color: #ffffffa1;
     position: sticky;
     z-index: 1000;
+    font-family: 'Bai Jamjuree';
 }
 
 nav a {
@@ -32,28 +32,47 @@ nav a.home {
 }
 
 /* Body */
-/* Home */
-.logo {
-    /* max-width: 80%;
-    height: auto; */
-    width: 40vw;
-    /* Scales with viewport width */
-    max-width: 400px;
-    /* Prevents excessive growth */
-    height: auto;
+body {
+    background-color: #f8f9f9 !important;
 }
 
-.container {
+/* Home */
+/* .sama-container {
+    background-color: #d63f75;
     display: grid;
+    margin: 20px;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     height: 90vh;
+}  */
+.sama-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    /* Adjusts column sizes to bring them closer */
+    align-items: center;
+    gap: 10px;
+    /* Reduces space between image and text */
+    height: 90vh;
+    padding: 0 5vw;
+    /* Adds padding instead of margin to keep layout balanced */
 }
+
+.logo {
+    width: 40vw;
+    /* Slightly reduces image width */
+    max-width: 400px;
+    /* Limits maximum size */
+    padding: 10px;
+    /* Reduces padding */
+    height: auto;
+}
+
 
 .text {
     text-align: left;
+    font-family: 'Bai Jamjuree';
 }
 
 .title {
@@ -61,28 +80,110 @@ nav a.home {
     font-size: clamp(2rem, 5vw, 5rem);
     font-weight: bold;
     color: #d63f75;
+
 }
 
 .description {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 300;
     color: #333;
 }
 
-/* CONTACT */
-.contact-container {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; */
-
+/* EXPERTISE */
+.expertise-boxes{
+    /* background-color: #d63f75; */
     display: flex;
-    gap: 25px;
-    /* Adjust spacing */
+    gap: 5px;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Expertise-header {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.expertise-pic{
+    width: 40vw;
+    max-width: 60px;
+    padding: 10px;
+    height: auto;
+}
+
+.outlined-box {
+    border: 2px solid;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Bai Jamjuree';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures uniform spacing */
+    align-items: center;
+    min-height: 250px; /* Set a minimum height */
+    width: 300px;
+    background-color: #eaf2f8;
+}
+
+/* EXPERTISE */
+
+/* WORK */
+.section-header {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 100px;
+    font-family: 'Bai Jamjuree';
+    justify-content: flex-start;
     align-items: center;
 }
 
+
+/* WORK */
+.work-cube {
+    width: 30vw;
+    /* Scales with viewport width */
+    max-width: 125px;
+    padding: 20px;
+    /* Prevents excessive growth */
+    height: auto;
+}
+
+.work-card {
+    /* background-color: #d63f75; */
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Allows wrapping on small screens */
+}
+
+/* Ensure cards take full width on smaller screens */
+@media (max-width: 768px) {
+    .work-card {
+        flex-direction: column;
+        /* Stack cards vertically */
+        align-items: center;
+        /* Center them */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTACT */
 .contact-icons {
     display: flex;
     gap: 25px;
@@ -91,82 +192,44 @@ nav a.home {
 }
 
 .contact-icons a {
-    font-size: 30px;
+    font-size: 20px;
     /* Icon size */
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     /* Icon color */
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
 }
 
 .contact-icons a:hover {
-    color: rgb(106, 105, 105);
+    color: rgb(112, 116, 130);
     /* Hover effect */
 }
 
 .contact-logo {
-    width: 20vw;
+    width: 10vw;
     /* Scales with viewport width */
-    max-width: 120px;
+    max-width: 100px;
     /* Prevents excessive growth */
     height: auto;
 }
 
 .contact-text {
-    color: #d63f75;
     font-weight: bold;
     font-size: 1.5rem;
-
+    color: rgb(255, 255, 255);
+    font-family: 'Bai Jamjuree';
 }
 
-
-
-
-
-
-
-/* Work
-div.work {
-    width: 70%;
-    margin: 0 auto;
-}
-
-P.c {
-    font-size: 45px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-right: 100px;
-    background-color: aqua;
-
-}
-
-P.d {
-    font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-} */
-
-/* project 1 */
-/* .project {
-    display: in-line;
-    grid-template-columns: auto;
+footer {
+    /* background-color: rgb(245, 230, 255); */
+    background-color: #000000;
+    display: flex;
+    gap: 25px;
+    /* Adjust spacing */
+    align-items: center;
     padding: 10px;
 }
 
-.project-desc {
-    display: grid;
-    grid-template-columns: 1fr 6fr;
-} */
-
 
 /* Contact footer */
-div.Contact {
-    font-size: x-large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
 .contact-header {
     display: flex;
     align-items: center;
@@ -177,13 +240,4 @@ div.Contact {
 .conta {
     font-weight: bold;
     margin: 0;
-}
-
-.con {
-    color: #000000;
-    text-decoration: none;
-    text-align: left;
-    font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px;
 }
