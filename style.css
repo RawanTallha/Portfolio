@@ -33,7 +33,7 @@ nav a.home {
 
 /* BODY */
 body {
-    background-color: #f8f9f9 !important;
+    /* background-color: #f8f9f9 !important; */
 }
 
 /* HOME */
@@ -62,7 +62,6 @@ body {
     font-size: clamp(2rem, 5vw, 5rem);
     font-weight: bold;
     color: #d63f75;
-
 }
 
 .description {
@@ -72,6 +71,37 @@ body {
 }
 
 /* ABOUT ME */
+.some-class {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 10px 50px 80px 80px;
+    /* background-color: #9c5eaa; */
+}
+.personal-pic{
+    width: 40vw;
+    max-width: 600px;
+    /* padding: 10px; */
+    /* background-color: #d63f75; */
+    height: auto;
+}
+/* .About-me h1{
+    font-size: clamp(2rem, 5vw, 5rem);
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Bai Jamjuree';
+    color: #d63f75;
+} */
+.some-class h1{
+    font-size: clamp(1rem, 5vw, 3rem);
+    font-weight: bold;
+    font-family: 'Bai Jamjuree';
+    color: #d63f75;
+}
+.some-class p{
+    font-size: 1.4rem;
+    font-family: 'Bai Jamjuree';
+}
+
 .About-me-boxes{
     display: flex;
     gap: 15px;
@@ -114,7 +144,7 @@ body {
     grid-template-columns: auto auto;
     font-size: 2rem;
     font-weight: 500;
-    padding-left: 100px;
+    padding-left: 50px;
     font-family: 'Bai Jamjuree';
     justify-content: flex-start;
     align-items: center;
