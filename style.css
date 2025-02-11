@@ -1,4 +1,4 @@
-/* navbar */
+/* NAVBAR */
 nav {
     font-size: medium;
     font-weight: 500;
@@ -31,44 +31,27 @@ nav a.home {
     float: right;
 }
 
-/* Body */
+/* BODY */
 body {
     background-color: #f8f9f9 !important;
 }
 
-/* Home */
-/* .sama-container {
-    background-color: #d63f75;
-    display: grid;
-    margin: 20px;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 90vh;
-}  */
+/* HOME */
 .sama-container {
     display: grid;
     grid-template-columns: 0.8fr 1fr;
-    /* Adjusts column sizes to bring them closer */
     align-items: center;
     gap: 10px;
-    /* Reduces space between image and text */
     height: 90vh;
     padding: 0 5vw;
-    /* Adds padding instead of margin to keep layout balanced */
 }
 
 .logo {
     width: 40vw;
-    /* Slightly reduces image width */
     max-width: 400px;
-    /* Limits maximum size */
     padding: 10px;
-    /* Reduces padding */
     height: auto;
 }
-
 
 .text {
     text-align: left;
@@ -76,7 +59,6 @@ body {
 }
 
 .title {
-    /* font-size: 5rem; */
     font-size: clamp(2rem, 5vw, 5rem);
     font-weight: bold;
     color: #d63f75;
@@ -89,22 +71,21 @@ body {
     color: #333;
 }
 
-/* EXPERTISE */
-.expertise-boxes{
-    /* background-color: #d63f75; */
+/* ABOUT ME */
+.About-me-boxes{
     display: flex;
-    gap: 5px;
+    gap: 15px;
     padding: 10px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.Expertise-header {
+.About-me-header {
     display: grid;
     grid-template-columns: auto auto;
 }
 
-.expertise-pic{
+.About-me-pic{
     width: 40vw;
     max-width: 60px;
     padding: 10px;
@@ -112,8 +93,9 @@ body {
 }
 
 .outlined-box {
-    border: 2px solid;
-    padding: 20px;
+    border: 2px solid #9c5eaa;
+    border-radius: 5px;
+    padding: 15px;
     text-align: center;
     font-size: 1.2rem;
     font-family: 'Bai Jamjuree';
@@ -122,11 +104,9 @@ body {
     justify-content: space-between; /* Ensures uniform spacing */
     align-items: center;
     min-height: 250px; /* Set a minimum height */
-    width: 300px;
+    width: 350px;
     background-color: #eaf2f8;
 }
-
-/* EXPERTISE */
 
 /* WORK */
 .section-header {
@@ -140,8 +120,6 @@ body {
     align-items: center;
 }
 
-
-/* WORK */
 .work-cube {
     width: 30vw;
     /* Scales with viewport width */
@@ -153,9 +131,14 @@ body {
 
 .work-card {
     /* background-color: #d63f75; */
-    display: flex;
+    /* display: flex;
     gap: 40px;
     padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap; */
+    display: flex;
+    gap: 15px;
+    padding: 10px;
     justify-content: center;
     flex-wrap: wrap;
     /* Allows wrapping on small screens */
@@ -171,14 +154,19 @@ body {
     }
 }
 
+/* EDUCATION  */
+.experince-boxes{
+    display: grid;
+    gap: 40px;
+    padding: 20px;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+}
 
-
-
-
-
-
-
-
+.custom-btn {
+    background-color: #c0a1ff!important; /* Custom color */
+    color: rgb(144, 10, 10) !important; /* Text color */
+}
 
 
 
@@ -229,7 +217,7 @@ footer {
 }
 
 
-/* Contact footer */
+/* FOOTER */
 .contact-header {
     display: flex;
     align-items: center;
