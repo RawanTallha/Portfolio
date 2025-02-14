@@ -34,6 +34,8 @@ nav a.home {
 /* BODY */
 body {
     /* background-color: #f8f9f9 !important; */
+    /* background-color: #252525 !important; */
+
 }
 
 /* HOME */
@@ -44,6 +46,7 @@ body {
     gap: 10px;
     height: 90vh;
     padding: 0 5vw;
+    /* background-color: #9c5eaa; */
 }
 
 .logo {
@@ -53,22 +56,46 @@ body {
     height: auto;
 }
 
-.text {
-    text-align: left;
+.welcome-section {
+
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ensures the section covers the full screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Prevents extra whitespace */
+}
+
+.wallpaper {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.welcome-title, .welcome-text {
+    position: absolute;
+    left: 50%;
     font-family: 'Bai Jamjuree';
+    transform: translate(-50%, -100%);
+    text-align: center;
+    z-index: 2; 
 }
 
-.title {
-    font-size: clamp(2rem, 5vw, 5rem);
+em {
+    font-size: 2em;
     font-weight: bold;
+    font-style: normal;
     color: #d63f75;
+
 }
 
-.description {
-    font-size: 2rem;
-    font-weight: 300;
-    color: #333;
-}
+.welcome-text {
+    top: 60%; 
+    font-size: 2em;
+} 
+
 
 /* ABOUT ME */
 .some-class {
@@ -135,7 +162,13 @@ body {
     align-items: center;
     min-height: 250px; /* Set a minimum height */
     width: 350px;
-    background-color: #eaf2f8;
+    /* background-color: #eaf2f8; */
+}
+
+.outlined-box i{
+    font-size: 50px;
+    color: rgb(132, 29, 29);
+
 }
 
 /* WORK */
@@ -211,9 +244,7 @@ body {
 
 .contact-icons a {
     font-size: 20px;
-    /* Icon size */
     color: rgb(255, 255, 255);
-    /* Icon color */
 }
 
 .contact-icons a:hover {
