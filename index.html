@@ -18,28 +18,26 @@
 
 <!-- Navbar -->
 <nav class="custom-navbar">
-    <a>R</a>
-    <a href="#Contact" class="split">Contact</a>
-    <a href="#Experince" class="split">Experince</a>
+    <a><img src="asset/heart-logo.png" height="40"></a>
+    <a href="#contact" class="split">Contact</a>
     <a href="#Work" class="split">Work</a>
+    <a href="#Education" class="split">Education</a>
     <a href="#About-me" class="split">About me</a>
     <a href="#Home" class="home">Home</a>
 </nav>
 
 <!-- Body -->
-
 <body>
 
     <!-- HOME SECTION -->
     <section id="Home">
-    <div class="welcome-section">
-        <img class="wallpaper" src="asset/cubes-wallpaper (1).png"> 
-        <!-- <p class="welcome-title">Hello <span>There!</span></p> -->
-        <p class="welcome-text"><em>Hello There!</em><br> I'm Rawan, a Junior Software Engineering student at University of Jeddah</p>
-    </div>
+        <div class="welcome-section">
+            <img class="wallpaper" src="asset/cubes-wallpaper (1).png">
+            <!-- <p class="welcome-title">Hello <span>There!</span></p> -->
+            <p class="welcome-text"><em>Hello There!</em><br> I'm Rawan, a Junior Software Engineering student at
+                University of Jeddah</p>
+        </div>
     </section>
-
-
 
     <!-- HOME SECTION -->
     <!-- <section id="Home">
@@ -54,52 +52,49 @@
     <!-- HOME SECTION -->
 
     <!-- ABOUT ME SECTION -->
-
     <section class="About-me" id="About-me">
-        <!-- <h1>Je t'aime, je te hais, je t'aime, je te hais</h1> -->
+        <div class="about-me-summary">
+            <img src="asset/personal_pic.png" class="personal-pic" alt="blue cube">
+            <div class="about-me-text">
+                <h1>About me</h1>
 
-        <div class="some-class">
-            <img src="asset/personal_pic.png"  class="personal-pic"  alt="blue cube">
-            <div>
-                <h1>Je t'aime, je te hais, je t'aime, je te hais</h1>
+                <p><br>Hey, I’m Rawan, a software engineer who enjoys coding, designing, and building software
+                    architectures. I focus on clean, scalable solutions, intuitive UI/UX, and efficient system design.
 
-                <p>T'es la meilleure chose qui m'est arrivée
-                    Mais aussi la pire chose qui m'est arrivée
-                    Ce jour où je t'ai rencontrée, j'aurais peut-être préféré
-                    Que ce jour soit jamais arrivé (arrivé)
-                    La pire des bénédictions
-                    La plus belle des malédictions
-                    De toi, j'devrais m'éloigner
-                    Mais comme dit le dicton
-                    "Plutôt qu'être seul, mieux vaut être mal accompagné"</p>
+                    I started with AI and machine learning but got more into software architecture, UI/UX, and front-end
+                    development. I like solving problems, improving user experiences, and experimenting with new
+                    technologies.</p>
             </div>
             <!-- <img src="asset/personal_pic.png"  class="personal-pic"  alt="blue cube"> -->
 
         </div>
-
-        <div class="section-header">
-            <img src="asset/light purple cube.png" class="work-cube" alt="blue cube">
-            <p>PERSONAL INFO</p>
+        <div class="section-name">
+            <p>WHAT I DO</p>
         </div>
+        <!-- <div class="section-header">
+            <img src="asset/light purple cube.png" class="work-cube" alt="blue cube">
+            <p>WHAT I DO</p>
+        </div> -->
 
-        <div class="About-me-boxes">
+        <div id="Education" class="Education">
             <div class="outlined-box">
                 <div class="About-me-header">
-                    <img src="asset/yellow cube.png" class="About-me-pic" alt="blue cube">
+                    <i class="fa-solid fa-code"></i>
+                    <!-- <img src="asset/yellow cube.png" class="About-me-pic" alt="blue cube"> -->
                     <h2>Software Development</h2>
                 </div>
                 <p>Experienced in both functional and OOP: Dart, Python, Java, and JavaScript.</p>
             </div>
-            <div class="outlined-box ">
+            <div class="outlined-box">
                 <div class="About-me-header">
                     <img src="asset/light purple cube.png" class="About-me-pic" alt="blue cube">
                     <h2>Frontend Development</h2>
                 </div>
                 <p>Passionate about UI/UX. Experienced in HTML, CSS, JS, and Bootstrap framework.</p>
             </div>
-            <div class="outlined-box ">
+            <div class="outlined-box">
                 <div class="About-me-header">
-                    <img src="asset/light purple cube.png" class="About-me-pic" alt="blue cube">
+                    <i class="fa-brands fa-android"></i>
                     <h2>Flutter Dev Android, iOS</h2>
                 </div>
                 <p>Skilled in developing hybrid mobile apps and cross-platform solutions using the Flutter
@@ -134,9 +129,12 @@
                 <img src="asset/classwift-card.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">CLASSWIFT</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the
-                        card's content.</p>
+                    <p class="card-text">
+                        ClasSwift is a smart campus app that helps faculty and students find available classrooms,
+                        report maintenance
+                        issues, and stay updated on campus events. Faculty can quickly book alternative classrooms and
+                        track maintenance reports.
+                    </p>
                     <a href="#" class="stretched-link"></a>
                 </div>
             </div>
@@ -145,9 +143,11 @@
                 <img src="asset/educurve-card.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">EduCurve</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the
-                        card's content.</p>
+                    <p class="card-text">
+                        EduCurve is a platform that enhances learning with AI-powered tools for note-taking, flashcards,
+                        and study scheduling. It helps students organize materials, extract key points from slides, and
+                        collaborate with classmates effortlessly.
+                    </p>
                     <a href="#" class="stretched-link"></a>
                 </div>
             </div>
@@ -156,9 +156,11 @@
                 <img src="asset/projects.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">قصتك</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the
-                        card's content.</p>
+                    <p class="card-text">
+                        Storytellers is an AI-powered app that lets kids create personalized stories based on their
+                        ideas. With interactive storytelling, illustrations, and voice narration, it makes reading and
+                        creativity fun!
+                    </p>
                     <a href="#" class="stretched-link"></a>
                 </div>
             </div>
@@ -170,13 +172,13 @@
 
     <!-- EXPERINCE SECTION -->
 
-    <section id="Experince">
+    <!-- <section id="Experince">
 
         <div class="section-header">
             <img src="asset/black cube.png" class="work-cube" alt="blue cube">
             <p>EDUCATION</p>
         </div>
-        <div class="experince-boxes">
+        <div class="experince-boxes"> -->
 
             <!-- <div class="d-flex justify-content-center">
                 <button class="btn btn-primary w-50 collapsed" type="button" data-bs-toggle="collapse"
@@ -184,8 +186,8 @@
                     Experience 1
                 </button>
             </div> -->
-            <div class="d-flex justify-content-center">
-                <button class="btn custom-btn w-50 collapsed" type="button" data-bs-toggle="collapse"
+            <!-- <div class="d-flex justify-content-center"> -->
+                <!-- <button class="btn custom-btn w-50 collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                     Experience 1
                 </button>
@@ -198,25 +200,20 @@
                     trigger.
                 </div>
             </div>
-
-
         </div>
-
-    </section>
-
-    <!-- EXPERINCE SECTION -->
-
+    </section> -->
 
     <!-- CONTACT SECTION -->
-    <footer>
+    <footer id="contact">
         <!-- <div class="contact-container"> -->
         <img src="asset/white-cube.png" class="contact-logo" alt="contact logo">
         <div>
             <p class="contact-text">Contact me</p>
             <div class="contact-icons">
-                <a href="" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/RawanTallha" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/RawanTallha" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/rawan-tallha-a633bb284/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
             </div>
         </div>
         <!-- </div> -->
