@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Protfolio</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,40 +14,24 @@
     <link href='https://fonts.googleapis.com/css?family=Bai Jamjuree' rel='stylesheet'>
 </head>
 
-<!-- Navbar -->
-<nav class="custom-navbar">
-    <a><img src="asset/heart-logo.png" height="40"></a>
-    <a href="#contact" class="split">Contact</a>
-    <a href="#Work" class="split">Work</a>
-    <a href="#Education" class="split">Education</a>
-    <a href="#About-me" class="split">About me</a>
-    <a href="#Home" class="home">Home</a>
-</nav>
-
-<!-- Body -->
 <body>
+    <!-- Navbar -->
+    <nav class="custom-navbar">
+        <a href="#Home"><img src="asset/heart-logo.png" height="40" alt="heart-logo"></a>
+        <a href="#contact" class="split">Contact</a>
+        <a href="#Work" class="split">Work</a>
+        <a href="#Education" class="split">Education</a>
+        <a href="#About-me" class="diff">About me</a>
+    </nav>
 
     <!-- HOME SECTION -->
     <section id="Home">
         <div class="welcome-section">
-            <img class="wallpaper" src="asset/cubes-wallpaper (1).png">
-            <!-- <p class="welcome-title">Hello <span>There!</span></p> -->
+            <img class="wallpaper" src="asset/cubes-wallpaper.png" alt="website wallpaper">
             <p class="welcome-text"><em>Hello There!</em><br> I'm Rawan, a Junior Software Engineering student at
                 University of Jeddah</p>
         </div>
     </section>
-
-    <!-- HOME SECTION -->
-    <!-- <section id="Home">
-        <div class="sama-container">
-            <img src="asset/logo.png" class="logo" alt="logo">
-            <div class="text">
-                <p class="title">Hello <span>There!</span></p>
-                <p class="description">I'm Rawan, a Junior Software Engineering student at University of Jeddah</p>
-            </div>
-        </div>
-    </section> -->
-    <!-- HOME SECTION -->
 
     <!-- ABOUT ME SECTION -->
     <section class="About-me" id="About-me">
@@ -58,39 +40,54 @@
             <div class="about-me-text">
                 <h1>About me</h1>
 
-                <p><br>Hey, I’m Rawan, a software engineer who enjoys coding, designing, and building software
+                <p><br>Hey, I’m Rawan, a software engineering student who enjoys coding, designing, and building
+                    software
                     architectures. I focus on clean, scalable solutions, intuitive UI/UX, and efficient system design.
-
                     I started with AI and machine learning but got more into software architecture, UI/UX, and front-end
                     development. I like solving problems, improving user experiences, and experimenting with new
                     technologies.</p>
             </div>
-            <!-- <img src="asset/personal_pic.png"  class="personal-pic"  alt="blue cube"> -->
-
         </div>
-        <div class="section-name">
-            <p>WHAT I DO</p>
-        </div>
-        <!-- <div class="section-header">
-            <img src="asset/light purple cube.png" class="work-cube" alt="blue cube">
-            <p>WHAT I DO</p>
-        </div> -->
+    </section>
 
-        <div id="Education" class="Education">
+    <section id="Education" class="Education">
+        <h1 class="Education-header">WHAT I DO</h1>
+        <div class="Education-content">
             <div class="outlined-box">
                 <div class="About-me-header">
                     <i class="fa-solid fa-code"></i>
-                    <!-- <img src="asset/yellow cube.png" class="About-me-pic" alt="blue cube"> -->
                     <h2>Software Development</h2>
                 </div>
                 <p>Experienced in both functional and OOP: Dart, Python, Java, and JavaScript.</p>
+                <div class="Education-details">
+                    <p>Courses: </p>
+                    <ul>
+                        <li>Coursera Data Collection and Processing</li>
+                        <li>Coursera Linear Algebra for ML</li>
+                        <li>Coursera Python Classes and Inheritance</li>
+                        <li>Coursera Python functions, Files, and Dictionaries</li>
+                    </ul>
+                </div>
             </div>
             <div class="outlined-box">
                 <div class="About-me-header">
-                    <img src="asset/light purple cube.png" class="About-me-pic" alt="blue cube">
+                    <i class="fa-solid fa-file-code"></i>
                     <h2>Frontend Development</h2>
                 </div>
                 <p>Passionate about UI/UX. Experienced in HTML, CSS, JS, and Bootstrap framework.</p>
+                <div class="Education-details">
+                    <p>Courses: </p>
+                    <ul>
+                        <li>Flutter & Dart bootcamp</li>
+                        <li>Human-Computer Interaction</li>
+                    </ul>
+                </div>
+                <div class="Education-details">
+                    <p>Hackthons: </p>
+                    <ul>
+                        <li>EduThon at King Khalid University</li>
+                    </ul>
+                </div>
             </div>
             <div class="outlined-box">
                 <div class="About-me-header">
@@ -100,30 +97,25 @@
                 <p>Skilled in developing hybrid mobile apps and cross-platform solutions using the Flutter
                     framework.
                 </p>
-            </div>
-
-            <div class="outlined-box">
-                <div class="About-me-header">
-                    <i class="fa-brands fa-flutter"></i>
-                    <!-- <img src="asset/light purple cube.png" class="About-me-pic" alt="blue cube"> -->
-                    <h2>Flutter Dev Android, iOS</h2>
+                <div class="Education-details">
+                    <p>Courses: </p>
+                    <ul>
+                        <li>Software Process Models</li>
+                    </ul>
                 </div>
-                <p>Skilled in developing hybrid mobile apps and cross-platform solutions using the Flutter
-                    framework.
-                </p>
+                <div class="Education-details">
+                    <p>Hackthons: </p>
+                    <ul>
+                        <li>ALLAM by SDAIA</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-    <!-- ABOUT ME SECTION -->
 
     <!-- WORK SECTION -->
     <section id="Work" class="work">
-        <div class="section-header">
-            <img src="asset/blue cube.png" class="work-cube" alt="blue cube">
-            <p>PROJECTS</p>
-        </div>
-
-
+        <h1 class="Word-header">WHAT I DID</h1>
         <div class="work-card">
             <div class="card mb-3" style="width: 30rem; height: fit-content;">
                 <img src="asset/classwift-card.png" class="card-img-top" alt="...">
@@ -135,7 +127,7 @@
                         issues, and stay updated on campus events. Faculty can quickly book alternative classrooms and
                         track maintenance reports.
                     </p>
-                    <a href="#" class="stretched-link"></a>
+                    <a href="https://github.com/QuadraCoders/ClasSwift" class="stretched-link"></a>
                 </div>
             </div>
 
@@ -148,7 +140,8 @@
                         and study scheduling. It helps students organize materials, extract key points from slides, and
                         collaborate with classmates effortlessly.
                     </p>
-                    <a href="#" class="stretched-link"></a>
+                    <a href="https://www.figma.com/proto/l7AVOnsEUJFYRlFmSgDehJ/EduCurve-App?node-id=0-1&t=yHWDaf8A3UvFNoae-1"
+                        class="stretched-link"></a>
                 </div>
             </div>
 
@@ -161,51 +154,16 @@
                         ideas. With interactive storytelling, illustrations, and voice narration, it makes reading and
                         creativity fun!
                     </p>
-                    <a href="#" class="stretched-link"></a>
+                    <a href="https://github.com/RawanTallha/Storytellers" class="stretched-link"></a>
                 </div>
             </div>
 
         </div>
 
     </section>
-    <!-- WORK SECTION -->
-
-    <!-- EXPERINCE SECTION -->
-
-    <!-- <section id="Experince">
-
-        <div class="section-header">
-            <img src="asset/black cube.png" class="work-cube" alt="blue cube">
-            <p>EDUCATION</p>
-        </div>
-        <div class="experince-boxes"> -->
-
-            <!-- <div class="d-flex justify-content-center">
-                <button class="btn btn-primary w-50 collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    Experience 1
-                </button>
-            </div> -->
-            <!-- <div class="d-flex justify-content-center"> -->
-                <!-- <button class="btn custom-btn w-50 collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    Experience 1
-                </button>
-            </div>
-
-            <div class="collapse" id="collapseExample" style="">
-                <div class="card card-body">
-                    Some placeholder content for the collapse component. This panel is
-                    hidden by default but revealed when the user activates the relevant
-                    trigger.
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- CONTACT SECTION -->
     <footer id="contact">
-        <!-- <div class="contact-container"> -->
         <img src="asset/white-cube.png" class="contact-logo" alt="contact logo">
         <div>
             <p class="contact-text">Contact me</p>
@@ -216,9 +174,7 @@
                         class="fab fa-linkedin"></i></a>
             </div>
         </div>
-        <!-- </div> -->
     </footer>
-    <!-- CONTACT SECTION -->
 
 </body>
 

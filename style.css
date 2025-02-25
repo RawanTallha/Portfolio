@@ -1,28 +1,3 @@
-.custom-btn {
-    background-color: #ff5733 !important; /* Force custom orange */
-    color: white !important;
-    border-radius: 8px;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-}
-
-.custom-btn:hover {
-    background-color: #e64a19 !important; /* Darker orange */
-    color: white !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 /* NAVBAR */
 nav {
     font-size: medium;
@@ -52,72 +27,21 @@ nav a.split:hover {
     color: rgb(112, 116, 130);
 }
 
-nav a.home {
+nav a.diff {
     color: rgb(12, 183, 245);
     float: right;
 }
 
-/* BODY */
-body {
-    /* background-color: #f8f9f9 !important; */
-    /* background-color: #252525 !important; */
-
-}
-
-.section-header {
-    display: grid;
-    grid-template-columns: auto auto;
-    font-size: 2rem;
-    font-weight: 500;
-    padding-left: 50px;
-    font-family: 'Bai Jamjuree';
-    justify-content: flex-start;
-    align-items: center;
-}
-.section-name{
-    font-family: 'Bai Jamjuree';
-    font-size: 3em;
-    font-weight: bolder;
-    /* color: #5dcdf6; */
-    color: rgb(122, 54, 181);
-    /* padding-left: 5%; */
-    text-align: center;
-    /* background-color: #d3eef8; */
-
-    /* background-color: #a2e6ff; */
-    margin: 3%;
-    border-radius: 5%;
-}
-
-/* HOME */
-.sama-container {
-    display: grid;
-    grid-template-columns: 0.8fr 1fr;
-    align-items: center;
-    gap: 10px;
-    height: 90vh;
-    padding: 0 5vw;
-    /* background-color: #9c5eaa; */
-}
-
-.logo {
-    width: 40vw;
-    max-width: 400px;
-    padding: 10px;
-    height: auto;
-}
-
+/* WELCOMING */
 .welcome-section {
     position: relative;
     width: 100%;
     height: 100vh;
-    /* Ensures the section covers the full screen */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     overflow: hidden;
-    /* Prevents extra whitespace */
 }
 
 .wallpaper {
@@ -141,7 +65,6 @@ em {
     font-weight: bold;
     font-style: normal;
     color: #d63f75;
-
 }
 
 .welcome-text {
@@ -149,20 +72,38 @@ em {
     font-size: 2em;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    em {
+        font-size: 2em;
+        font-weight: bold;
+        font-style: normal;
+        color: #d63f75;
+    }
+
+    .welcome-text {
+        font-size: 1.5em;
+    }
+}
 
 /* ABOUT ME */
 .about-me-summary {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px 50px 80px 80px;
-    /* background-color: #9c5eaa; */
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
 }
 
 .personal-pic {
     width: 40vw;
     max-width: 600px;
-    /* padding: 10px; */
-    /* background-color: #d63f75; */
     height: auto;
 }
 
@@ -178,9 +119,50 @@ em {
     font-family: 'Bai Jamjuree';
 }
 
-.Education {
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-me-summary {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .personal-pic {
+        width: 60vw;
+        max-width: 300px;
+    }
+
+    .about-me-summary h1 {
+        font-size: 2rem;
+        font-weight: bolder;
+        font-family: 'Bai Jamjuree';
+        color: #d63f75;
+    }
+
+    .about-me-summary p {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+}
+
+/* EDUCATION */
+.Education-header{
+    font-size: 3em;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Bai Jamjuree';
+    color: white;
+    /* text-decoration: underline; */
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #a569bd;
+}
+
+.Education-content {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     padding: 10px;
     justify-content: center;
     flex-wrap: wrap;
@@ -198,81 +180,71 @@ em {
     height: auto;
 }
 
+.Education-details p{
+    font-weight: bold;
+    color: #a569bd;
+}
+
+.Education-details{
+    text-align: start;
+}
+
 .outlined-box {
-    border: 3px solid #9c5eaa;
+    border: 3px solid #a569bd;
     border-radius: 5px;
-    padding: 15px;
-    text-align: center;
+    padding: 20px;
     font-size: 1.2rem;
     font-family: 'Bai Jamjuree';
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    min-height: 250px;
+    min-height: 400px;
     width: 350px;
 }
 
 .outlined-box i {
-    font-size: 50px;
-    color: #9c5eaa;
+    font-size: 4rem;
+    color: #a569bd;
 }
 
 /* WORK */
+.Word-header{
+    font-size: 3em;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Bai Jamjuree';
+    color: white;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #9ecbff;
+}
+
 .work-cube {
     width: 30vw;
-    /* Scales with viewport width */
     max-width: 125px;
     padding: 20px;
-    /* Prevents excessive growth */
     height: auto;
 }
 
 .work-card {
-    /* background-color: #d63f75; */
-    /* display: flex;
-    gap: 40px;
-    padding: 20px;
-    justify-content: center;
-    flex-wrap: wrap; */
     display: flex;
     gap: 15px;
     padding: 10px;
     justify-content: center;
     flex-wrap: wrap;
-    /* Allows wrapping on small screens */
 }
 
 /* Ensure cards take full width on smaller screens */
 @media (max-width: 768px) {
     .work-card {
         flex-direction: column;
-        /* Stack cards vertically */
         align-items: center;
-        /* Center them */
     }
 }
 
-/* EDUCATION  */
-.experince-boxes {
-    display: grid;
-    gap: 40px;
-    padding: 20px;
-    /* justify-content: center; */
-    flex-wrap: wrap;
-}
 
-.custom-btn {
-    background-color: #c0a1ff !important;
-    /* Custom color */
-    color: rgb(144, 10, 10) !important;
-    /* Text color */
-}
-
-
-
-
-/* CONTACT */
+/* FOOTER */
 .contact-icons {
     display: flex;
     gap: 25px;
@@ -315,8 +287,6 @@ footer {
     padding: 10px;
 }
 
-
-/* FOOTER */
 .contact-header {
     display: flex;
     align-items: center;
